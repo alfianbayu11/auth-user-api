@@ -8,6 +8,26 @@ This project is a user authentication API built with FastAPI, SQLAlchemy, and JW
 - User login
 - Protected resource access
 
+## Design Decisions
+
+1. **FastAPI**: Chosen for its high performance and ease of creating quick and efficient APIs.
+2. **SQLAlchemy**: Used as an ORM to simplify interactions with the MySQL database, allowing us to write Python code instead of raw SQL.
+3. **JWT (JSON Web Token)**: Selected for token-based authentication due to its security and ability to store user information in an encrypted token.
+
+## Library Choices
+
+- **FastAPI**: The main framework for building the API.
+- **SQLAlchemy**: ORM for database interactions.
+- **passlib**: For secure password hashing.
+- **python-jose**: For encoding and decoding JWT.
+- **pydantic**: For data validation.
+
+## Challenges
+
+1. **Security**: Ensuring user data is secure during registration and login processes. This was addressed by using secure password hashing and JWT.
+2. **Database Integration**: Setting up and migrating the database with SQLAlchemy, ensuring the database schema matches the defined models.
+3. **Token Management**: Handling token expiration and ensuring expired tokens cannot be used to access protected resources.
+
 ## Setup
 
 ### Prerequisites
